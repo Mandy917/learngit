@@ -1,0 +1,4 @@
+@import "../movie/movie-template.wxss";
+
+.grid-container{padding:40rpx 0 40rpx 5rpx;overflow:hidden;}
+.grid-container .movie-container{float:left;margin:0 0 30rpx 35rpx;}

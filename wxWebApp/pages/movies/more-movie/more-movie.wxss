@@ -1,0 +1,5 @@
+@import "../movie-grid/movie-grid-template.wxss";
+
+.more-container{padding-bottom:40rpx;}
+.more-container .grid-container{padding-bottom:0;}
+.more-tip{font-size:14px;text-align:center;display:block;width:100%;}

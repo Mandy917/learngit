@@ -1,0 +1,7 @@
+<import src="../movie-grid/movie-grid-template.wxml" />
+
+<view class="more-container">
+    <template is="movieGridTemplate" data="{{movies}}"/>
+    <text class="more-tip" wx:if="{{totalDataComplete}}">亲，已经到底了哦~</text>
+</view>
+
