@@ -4,6 +4,9 @@ var postsData = require('../../data/posts-data.js');
 Page({
   data: {
     //小程序总是会读取data对象来做数据绑定，这个动作我们称为A,而这个动作A的执行，是在在onLoad事件执行之后发生的
+    scrollTop:0,
+    goTopShow:false
+
   },
   // 生命周期函数--监听页面加载
   onLoad: function (options) {
@@ -12,6 +15,23 @@ Page({
     this.setData({
       post_key: postsData.postList
     });
+  },
+  scrollTopFun:function(e){
+    var top = e.detail.scrollTop;
+    if(top>300){
+      this.setData({
+        goTopShow:true
+      })
+    }else{
+      this.setData({
+        goTopShow:false
+      })
+    }
+  },
+  goTopFun: function(e){    
+    this.setData({  
+      scrollTop: 0  
+    });  
   },
   onPostTap: function (event) {
     var that = this;

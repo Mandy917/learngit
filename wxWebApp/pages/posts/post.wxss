@@ -1,6 +1,19 @@
 @import 'post-item/post-item-template.wxss';
 
+page{height:100%;}
 swiper{width:100%;height:600rpx;}
 swiper image{width:100%;height:100%;}
+
+.wx-swiper-dots.wx-swiper-dots-horizontal{
+    right:0rpx;
+    bottom:0;font-size:0;transform:3d(0,0,0);
+}
+
+.wx-swiper-dots .wx-swiper-dot{width:40rpx;height:40rpx;vertical-align:middle;}
+.wx-swiper-dots .wx-swiper-dot::before{content:'';display:inline-block;width:20rpx;height:20rpx;margin:0rpx 0;background:#fff;border-radius:50%;opacity:0.8;margin-top:10rpx;}
+.wx-swiper-dots .wx-swiper-dot-active::before{width:24rpx;height:24rpx;margin:0;background:#fc6454;opacity:1;margin-top:8rpx;}
+
+.back-top{width:50px;height:50px;background:#405f80;border-radius:50%;position:fixed;bottom:10px;right:10px;display:flex;align-items:center;}
+.back-top text{width:30px;text-align:center;color:#fff;font-size:13px;margin:0 auto;}
 
 
