@@ -15,9 +15,13 @@
     ![](images/flexbox-3.jpeg) 
     - align-items:flex-start||flex-end||center||stretch(default)||baseline
     设置flex项目在垂直方向上的对齐方式
-    {align-items:flex-start}
+    ```
+    align-items:flex-start}
+    ```
     ![](images/flexbox-5.png)
-    {align-items:flex-end}
+    ```
+    align-items:flex-end
+    ```
     ![](images/flexbox-6.png)
     {align-items:center}
     ![](images/flexbox-7.png)
@@ -26,5 +30,5 @@
     {align-items:baseline}
     ![](images/flexbox-8.jpeg)
 
-    - align-content
+    - align-content:
 
