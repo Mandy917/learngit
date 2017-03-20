@@ -9,10 +9,15 @@
     flex-direction与flex-wrap的缩写 
     - justify-content:flex-start(default 左对齐)||flex-end(右对齐)||center(居中)||space-between||space-around 
     设置flex项目在主轴上(水平方向)的对其方式
-    {justify-content:space-between}
+    ```
+    justify-content:space-between
+    ```
     ![](images/flexbox-2.jpeg)
-    {justify-content:space-around}
+    ```
+    justify-content:space-around
+    ```
     ![](images/flexbox-3.jpeg) 
+    
     - align-items:flex-start||flex-end||center||stretch(default)||baseline
     设置flex项目在垂直方向上的对齐方式
     ```
@@ -23,11 +28,17 @@
     align-items:flex-end
     ```
     ![](images/flexbox-6.png)
-    {align-items:center}
+    ```
+    align-items:center
+    ```
     ![](images/flexbox-7.png)
-    {align-items:stretch}
+    ```
+    align-items:stretch
+    ```
     ![](images/flexbox-4.png)
-    {align-items:baseline}
+    ```
+    align-items:baseline
+    ```
     ![](images/flexbox-8.jpeg)
 
     - align-content:
