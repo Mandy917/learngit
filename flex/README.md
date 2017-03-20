@@ -10,6 +10,6 @@
     - align-items:
     - align-content
 5. {justify-content:space-between}
-    ![](images/flexbox-1.jpg)
+    ![](images/flexbox-2.jpeg)
 6. {justify-content:space-around}
-    ![](images/flexbox-2.jpg) 
+    ![](images/flexbox-3.jpeg) 
