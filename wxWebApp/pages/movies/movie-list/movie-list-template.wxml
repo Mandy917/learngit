@@ -10,10 +10,10 @@
         <image class="more-img" src="/images/icon/arrow-right.png"></image>
       </view>
     </view>
-    <view class="movie-list-content">
+    <scroll-view class="movie-list-content" scroll-x="true">
       <block wx:for="{{movies}}" wx:for-item="movie">
         <template is="movieTemplate" data="{{...movie}}"/>
       </block>
-    </view>
+    </scroll-view>
   </view>
 </template>

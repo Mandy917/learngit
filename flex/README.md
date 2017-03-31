@@ -7,15 +7,15 @@
     flex-direction:row(default)||column||row-reverse||column-reverse
     ```
     ```
-    **控制flex项目是否换行排列，默认不换行**
+    控制flex项目是否换行排列，默认不换行
     flex-wrap:wrap||nowrap(default)||wrap-reverse 
     ```
     ```
-    **flex-direction与flex-wrap的缩写** 
+    flex-direction与flex-wrap的缩写 
     flex-flow:flex-flow:row wrap;
     ```
     ```
-    **设置flex项目在主轴上(水平方向)的对其方式**
+    设置flex项目在主轴上(水平方向)的对其方式
     justify-content:flex-start(default 左对齐)||flex-end(右对齐)||center(居中)||space-between||space-around 
     ```
     ```
@@ -28,7 +28,7 @@
     ![](images/flexbox-3.jpeg) 
 
     ```
-    **设置flex项目在垂直方向上的对齐方式**
+    设置flex项目在垂直方向上的对齐方式
     align-items:flex-start||flex-end||center||stretch(default)||baseline
     ```
     ```

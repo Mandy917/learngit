@@ -1,11 +1,12 @@
 @import "../movie/movie-template.wxss";
 
-.movie-list-container{background:#fff;display:flex;flex-direction:column;margin-bottom:24rpx;padding:0 0 30rpx 0;}
-.movie-list-head{padding:30rpx 30rpx 22rpx;}
+.movie-list-container{background:#fff;display:flex;flex-direction:column;margin-bottom:24rpx;padding:0 0rpx 30rpx 30rpx;}
+.movie-list-head{padding:30rpx 30rpx 22rpx 0;}
 .slogan{font-size:17px;}
 .more{float:right;}
 .more-text{color:#405f80;vertical-align:middle;font-size:13px;}
 .more-img{width:9rpx;height:16rpx;vertical-align:middle;margin-left:4rpx;}
-.movie-list-content{display:flex;flex-direction:row;justify-content:space-between;padding:0 30rpx;}
+.movie-list-content{width:100%;white-space: nowrap;}
+.movie-list-content .movie-container{margin-right:30rpx;}
 
 

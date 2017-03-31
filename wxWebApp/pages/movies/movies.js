@@ -23,9 +23,9 @@ Page({
 
     },
     onLoad: function (event) {
-        var inTheatersUrl = app.globalData.doubanBase + '/v2/movie/in_theaters' + '?start=0&count=3';
-        var comingSoonUrl = app.globalData.doubanBase + '/v2/movie/coming_soon' + '?start=0&count=3';
-        var top250Url = app.globalData.doubanBase + '/v2/movie/top250' + '?start=0&count=3';
+        var inTheatersUrl = app.globalData.doubanBase + '/v2/movie/in_theaters' + '?start=0&count=6';
+        var comingSoonUrl = app.globalData.doubanBase + '/v2/movie/coming_soon' + '?start=0&count=6';
+        var top250Url = app.globalData.doubanBase + '/v2/movie/top250' + '?start=0&count=6';
 
         this.getMovieListData(inTheatersUrl, 'inTheaters', '正在热映');//异步
         this.getMovieListData(comingSoonUrl, 'comingSoon', '即将上映');//异步
