@@ -1,0 +1,26 @@
+/**
+ * 单行文本溢出显示省略号 
+ */
+
+p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+/**
+ * 多行文本溢出显示省略号 
+ */
+
+p {
+	/* 弹性伸缩盒子模型显示 */
+    display: -webkit-box;
+    /* 设置伸缩盒子对象的子元素的排列方式 */
+    -webkit-box-orient: vertical;
+    /* 显示文本的行数 */
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+
