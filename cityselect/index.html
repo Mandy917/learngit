@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-1.9.1.min.js" ></script>
+    <script src="jquery.cityselect.js" ></script>
+    <title></title>
+    <style>
+        *{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;}
+        li{list-style:none;}
+        #cityselect{width:420px;overflow:hidden;margin:50px auto 0;font-size:14px;}
+        .prov-box,.city-box,.dist-box{width:120px;float:left;margin-right:20px;}
+        .prov-res,.city-res,.dist-res{width:120px;height:36px;line-height:36px;text-align:center;border:1px #e8e8e8 solid;cursor:pointer;border-radius:6px;}
+        .prov,.city,.dist{display:none;max-height:400px;overflow-y:auto;width:120px;border:1px #e8e8e8 solid;border-top:0;}
+        ul li{width:100%;line-height:36px;cursor:pointer;padding:0 8px;border-bottom:1px #e8e8e8 solid;}
+        ul li:last-child{border-bottom:0;}
+        .disabled{background:#f5f5f5;}
+    </style>
+</head>
+<body>
+<div id="cityselect">
+    <div class="prov-box">
+        <p class="prov-res j-btn">请选择省份</p>
+        <ul class="prov"></ul>
+    </div>
+    <div class="city-box">
+        <p class="city-res disabled j-btn">请选择城市</p>
+        <ul class="city"></ul>
+    </div>
+    <div class="dist-box">
+        <p class="dist-res disabled j-btn">请选择地区</p>
+        <ul class="dist"></ul>
+    </div>
+</div>
+<script>
+    $(function(){
+        $("#cityselect").citySelect({
+            url:"data.js",
+            // prov:"广东",
+            // city:"深圳",
+            // dist:'天河区'
+        })
+    })
+</script>
+</body>
+</html>
