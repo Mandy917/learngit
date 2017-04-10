@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+	<p>1</p>
+	<p>2</p>
+	<p>3</p>
+	<p>4</p>
+	<script>
+	var el = $('p').each(function(){
+		return this;
+	})
+	console.log(el);
+	
+
+	
+			
+
+
+
+	/*$.fn.example = function(options){
+		var bgColor = options && options.bgColor || '#fffceb';
+		var color = options && options.color || '#d85030';
+		this.css({'backgroundColor':bgColor,'color':color});
+		return this;
+	}*/
+
+	
+
+	/*$.fn.example = function(options){
+		var opts = $.extend({
+			bgColor:'#eee',
+			color:'#fff'
+		},options)
+	}*/
+
+
+
+
+	/*$.fn.example = function(options){
+		var opts = $.extend({},$.fn.example.defaults,options);
+	}
+
+	$.fn.example.defaults = {
+		bgColor:'#eee',
+		color:'#fff'
+	}*/
+
+
+
+	// $('div').example({
+	// 	bgColor:'#00a896',
+	// 	color:'#fff'
+	// })
+
+
+
+	</script>
+</body>
+</html>

@@ -123,7 +123,6 @@ dist:默认地区（县）
         })
 		
 		box_obj.on("click",'li',function(){
-			console.log('1');
 			var $this = $(this);
 			cityList($this);
 		});
