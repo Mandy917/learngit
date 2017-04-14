@@ -6,22 +6,7 @@
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 </head>
 <body>
-	<p>1</p>
-	<p>2</p>
-	<p>3</p>
-	<p>4</p>
 	<script>
-	var el = $('p').each(function(){
-		return this;
-	})
-	console.log(el);
-	
-
-	
-			
-
-
-
 	/*$.fn.example = function(options){
 		var bgColor = options && options.bgColor || '#fffceb';
 		var color = options && options.color || '#d85030';
@@ -50,7 +35,11 @@
 		color:'#fff'
 	}*/
 
-
+	(function($){
+		$.fn.example = function(options){
+			
+		}
+	})(jQuery)
 
 	// $('div').example({
 	// 	bgColor:'#00a896',
