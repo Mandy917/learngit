@@ -50,10 +50,15 @@
         };
 
         var init=function(){
-            waterfallLists.find('img').load(function(){
+            //解决图片被缓存后，无法触发load事件
+            waterfallLists.find('img').one('load',function(){
                 imgLen++;
                 if(imgLen == waterfallLists.length){
                     layout();
+                }
+            }).each(function(){
+                if(this.complete){
+                    $(this).load();
                 }
             })
         }; 
