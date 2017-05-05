@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		li{list-style:none;}
+		#wrap{width:1100px;height:600px;border:2px green solid;margin:100px auto;}
+		#box1{
+			display: flex;/*display:inline-flex*/
+			flex-direction:row;
+			flex-wrap:wrap;
+			justify-content:flex-start;
+			align-content:center;
+			
+		}
+		/*flex-direction || flex-wrap || flex-flow || justify-content || align-items || align-content*/
+
+		/*
+			flex-wrap: wrap || nowrap || wrap-reverse
+			justify-content: flex-start || flex-end || center || space-between || space-around
+			align-items: flex-start || flex-end || center || stretch || baseline
+			align-content: flex-start || flex-end || center || stretch 
+
+		*/
+
+		/*flex项目
+		order || flex-grow || flex-shrink || flex-basis
+
+		*/
+		#box1 li{background:#8cacea;margin:10px;color:#fff;font-size:16px;padding:10px;
+			flex-grow:1;
+			flex-shrink:0;
+			flex-basis:150px;
+		}
+		#box1 li:first-child{order:1;}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<ul id="box1">
+			<li>My name is zhaoman,How are you</li>
+			<!-- <li>2</li>
+			<li>3</li>
+			<li>4</li> -->
+			<!-- <li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>13</li>
+			<li>14</li>
+			<li>15</li>
+			<li>16</li>
+			<li>17</li>
+			<li>18</li> -->
+		</ul>
+	</div>
+</body>
+</html>

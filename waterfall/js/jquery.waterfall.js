@@ -46,6 +46,9 @@
                 }
             });
             var boxH = waterfallLists.last().position().top+waterfallLists.last().outerHeight(true);
+            var maxH = Math.max.apply( null, pinHArr );
+            
+            boxH = maxH > boxH ? maxH : boxH; 
             $this.css({'height':boxH+'px'});
         };
 

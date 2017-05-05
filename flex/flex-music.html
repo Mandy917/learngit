@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="email=no"  />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style>
+		*{margin:0;padding:0;}
+		li{list-style:none;}
+		html,body{height:100%;}
+
+		#music{display:flex;flex-direction:column;height:100%;font-family:'微软雅黑';}
+		.main{flex:1 0 auto;display:flex;}
+		.music-nav{display:flex;flex-direction:column;flex:0 0 40px;justify-content:space-around; background: #f2f2f2;align-items:center;}
+		.music-nav i{font-size:20px;font-style:normal;color:#4e4e4e;}
+		.music-content{display:flex;flex-direction:column;flex:1 0 auto;}
+		.music-head{flex:0 0 200px;display:flex;padding:20px;background:#4e4e4e;}
+		.music-head img{height:200px;}
+		.music-head-catty{flex:1;display:flex;flex-direction:column;padding-left:30px;color:#fff;}
+		.music-head-catty-info{margin-bottom:auto;}
+		.music-head-catty-info p:first-child{font-size:24px;margin-bottom:10px;}
+		.music-head-catty-info p{font-size:12px;margin-bottom:4px;}
+		.music-head-catty-btn{display:flex;margin-top:0;}
+		.music-head-catty-btn p{padding-right:20px;font-size:14px;}
+		.music-list{flex:1 0 auto;padding:5px 10px 0;}
+		.music-list li{display:flex;padding:20px;font-size:14px;color:#222;}
+		.music-list li:nth-child(2n){background:#f2f2f2;}
+		.music-list li p{flex:0 0 25%;}
+		.catty-cloud{border:1px #999 solid;font-size:14px;padding:4px;}
+		footer{flex:0 0 100px;background:rgba(61,100,158,.9);padding:10px;display:flex;}
+		.footer-info{flex:0 0 50%;display:flex;}
+		.footer-info img{width:186px;}
+		.footer-info-txt{padding-left:20px;display:flex;justify-content:space-around;flex-direction:column;color:#fff;font-size:16px;}
+		.footer-btn{flex:0 0 50%;display:flex;justify-content:space-around;align-items:center;}
+		.footer-btn i{color:#fff;}
+
+		@media screen and (max-width: 414px) {
+			.sm-hide{display:none;}
+
+			.music-head{flex:0 0 auto;flex-direction:column;align-items:center;}
+			.music-head img{width:100px;height:auto;margin-bottom:20px;}
+			.music-head-catty{padding:0;flex:0 1 auto;}
+			.music-head-catty-info p:first-child{font-size:15px;margin-bottom:0;}
+			.music-head-catty-btn{justify-content:center;margin-top:10px;}
+			.music-list li p{flex:0 0 50%;}
+
+			.sm-text-right{text-align:right;}
+			.footer-info img{width:100px;}
+		}
+
+	</style>
+</head>
+<body>
+	<div id="music">
+		<div class="main">
+			<aside class="music-nav">
+				<i class="fa fa-bars"></i>
+				<i class="fa fa-home"></i>
+				<i class="fa fa-search"></i>
+				<i class="fa fa-volume-up"></i>
+				<i class="fa fa-user"></i>
+				<i class="fa fa-spotify"></i>
+				<i class="fa fa-cog"></i>
+				<i class="fa fa-soundcloud"></i>
+			</aside>
+			<section class="music-content">
+				<div class="music-head">
+					<img src="http://images.zhiwo.com/product/2017/0118/5387352097866718073.jpg">
+					<div class="music-head-catty">
+						<div class="music-head-catty-info">
+							<p>CattyBoard Top 100 Single Charts (11.06.36)</p>
+							<p class="sm-hide">Unknown Artist</p>
+							<p class="sm-hide">2016 . Charts . 100 songs</p>
+						</div>
+						<div class="music-head-catty-btn">
+							<p class="fa fa-play"> &nbsp;Play all</p>
+							<p class="fa fa-plus"> &nbsp;Add to</p>
+							<p class="fa fa-ellipsis-h">&nbsp;&nbsp;More</p>
+						</div>
+					</div>
+				</div>
+				<div class="music-list">
+					<ul>
+						<li>
+							<p>1. One Dance</p>
+							<p class="sm-hide">Crake feat CatKid &amp; Cyla</p>
+							<p class="sm-text-right">2:54</p>
+							<p class="sm-hide"><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+						</li>
+						<li>
+							<p>2. Panda</p>
+							<p class="sm-hide">Cattee</p>
+							<p class="sm-text-right">4:06</p>
+							<p class="sm-hide"><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+						</li>
+						<li>
+							<p>3. Can't Stop the Feeling!</p>
+							<p class="sm-hide">Catin Cimberlake</p>
+							<p class="sm-text-right">3:56</p>
+							<p class="sm-hide"><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+						</li>
+						<li>
+							<p>4. Work From Home</p>
+							<p class="sm-hide">Cat Harmony feat Colla</p>
+							<p class="sm-text-right">3:34</p>
+							<p class="sm-hide"><span class="catty-cloud">CATTY CLOUD SYNC</span></p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="footer-info">
+				<img class="sm-hide" src="http://images.zhiwo.com/product/2017/0118/5387352097866718073.jpg">
+				<div class="footer-info-txt">
+					<p>If It Ain't Love</p>
+					<p>Catson Derulo</p>
+				</div>
+			</div>
+			<div class="footer-btn">
+				<i class="fa fa-step-backward"></i>
+				<i class="fa fa-pause"></i>
+				<i class="fa fa-step-forward"></i>
+				<i class="fa fa-rotate-right sm-hide"></i>
+				<i class="fa fa-random sm-hide"></i>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
